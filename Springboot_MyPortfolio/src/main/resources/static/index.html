@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tushar Wagh | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section:target {
+      animation: flashHighlight 1s ease-out;
+    }
+
+    @keyframes flashHighlight {
+      0% {
+        box-shadow: 0 0 25px 5px cyan;
+        transform: scale(1.01);
+      }
+      100% {
+        box-shadow: none;
+        transform: scale(1);
+      }
+    }
+
+    nav ul li a.active {
+      color: cyan;
+      font-weight: bold;
+      border-bottom: 2px solid cyan;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .typewriter-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 10px cyan;
+      min-height: 50px;
+    }
+
+    footer.animate-section.card-3d {
+      background: #111;
+      color: white;
+      box-shadow: 0 0 15px cyan;
+      border-radius: 10px;
+      margin: 60px 20px 20px;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid cyan;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="page-container">
+
+      <!-- Header -->
+      <header class="navbar-3d">
+        <div class="logo">Tushar Wagh</div>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero card-3d" style="background: url('/image/computer.jpg') no-repeat center center/cover;">
+        <h1 class="typewriter-text"></h1>
+        <p>Java Developer | Spring Boot Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="animate-section card-3d">
+        <h2>About Me</h2>
+        <img src="/image/profile.png.jpg"
+          alt="Tushar Wagh"
+          style="width: 300px; height: 400px; object-fit: cover; object-position: top center;
+          border-radius: 20px; border: 3px solid cyan; box-shadow: 0 0 25px cyan; margin-bottom: 20px;
+          transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='scale(1.03)'"
+          onmouseout="this.style.transform='scale(1)'"
+        >
+        <p>
+          I’m a passionate Java Developer with strong hands-on experience in building RESTful APIs and crafting full-stack web applications using technologies like 
+          Spring Boot, MySQL, HTML, CSS, and JavaScript.
+
+          With a deep understanding of backend systems and a keen eye for front-end responsiveness and design, I love turning ideas into clean, efficient, and scalable solutions.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="animate-section card-3d">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>MySQL</span>
+          <span>REST API</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="animate-section card-3d">
+        <h2>Projects</h2>
+        <div class="project-card card-3d-inner">
+          <h3>FoodPlaza</h3>
+          <p>Food ordering app using Java, Spring Boot, MySQL, JSP with login, cart, admin panel.</p>
+        </div>
+               <div class="project-card card-3d-inner">
+  <h3>SpringBoot Thymeleaf</h3>
+  <p>
+    A user registration system where data is dynamically stored into MySQL using Spring Boot and Thymeleaf. Includes add user form, server-side validation, and real-time database persistence.
+  </p>
+</div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="animate-section card-3d">
+        <h2>Contact</h2>
+        <p>
+          <i class="fas fa-envelope"></i>
+          Email: 
+          <a href="mailto:tushwagh97@gmail.com" style="color: cyan; text-decoration: underline;">
+            tushwagh97@gmail.com
+          </a>
+        </p>
+        <p>
+          <i class="fab fa-linkedin"></i>
+          LinkedIn: 
+          <a href="https://www.linkedin.com/in/tushwagh/" target="_blank">Visit</a>
+        </p>
+        <p>
+          <i class="fab fa-github"></i>
+          GitHub:
+          <a href="https://github.com/tushwagh" target="_blank">Visit</a>
+        </p>
+      </section>
+
+      <!-- Footer -->
+     <!-- Footer -->
+<footer style="
+  width: 100%;
+  background-color: #000;
+  padding: 20px 0;
+  margin-top: 80px;
+  border-top: 2px solid cyan;
+  box-shadow: 0 -1px 15px cyan;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 10;
+">
+  <p style="margin: 0; color: cyan;">© 2025 Tushar Wagh. All rights reserved.</p>
+</footer>
+     
+
+    </div>
+  </div>
+</body>
+</html>
